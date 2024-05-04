@@ -23,17 +23,17 @@ function MyTabs() {
             <MaterialCommunityIcons name="home" color={color} size={26} />
           ),
         }}/>
-      <Tab.Screen name="Pengaturan" component={pengaturan} 
+      <Tab.Screen name="Notifikasi" component={notifikasi} 
       options={{
           tabBarLabel: 'Notifikasi',
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="cog" color={color} size={26} />
+            <MaterialCommunityIcons name="bell" color={color} size={26} />
           ),
         }}/>
-      <Tab.Screen name="Notifikasi" component={notifikasi} options={{
-          tabBarLabel: 'Notifikasi',
+      <Tab.Screen name="Pengaturan" component={pengaturan} options={{
+          tabBarLabel: 'Pengaturan',
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="bell" color={color} size={26} />
+            <MaterialCommunityIcons name="cog" color={color} size={26} />
           ),
         }} />
     </Tab.Navigator>

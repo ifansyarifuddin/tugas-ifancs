@@ -6,8 +6,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import beranda from './screens/beranda';
-import pengaturan from './screens/pengaturan';
-import notifikasi from './screens/notifikasi';
+import Info from './screens/Info';
+import Privasi from './screens/Privasi';
 import Tafsir from './router/Tafsir';
 import TafsirDetail from './router/TafsirDetail';
 const Stack = createNativeStackNavigator();
@@ -23,17 +23,17 @@ function MyTabs() {
             <MaterialCommunityIcons name="home" color={color} size={26} />
           ),
         }}/>
-      <Tab.Screen name="Notifikasi" component={notifikasi} 
+      <Tab.Screen name="Privasi" component={Privasi} 
       options={{
-          tabBarLabel: 'Notifikasi',
+          tabBarLabel: 'Privasi Police',
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="bell" color={color} size={26} />
+            <MaterialCommunityIcons name="police-badge" color={color} size={26} />
           ),
         }}/>
-      <Tab.Screen name="Pengaturan" component={pengaturan} options={{
-          tabBarLabel: 'Pengaturan',
+      <Tab.Screen name="Info" component={Info} options={{
+          tabBarLabel: 'Info Aplikasi',
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="cog" color={color} size={26} />
+            <MaterialCommunityIcons name="information" color={color} size={26} />
           ),
         }} />
     </Tab.Navigator>

@@ -10,7 +10,7 @@ const Home = ({navigation}) => {
       onPress={() => 
             navigation.navigate('Tafsir')
           } style={styles.button}>
-        <Text style={styles.buttonText}>Tekan Saya</Text>
+        <Text style={styles.buttonText}>Go To Tafsir Qur'An</Text>
       </TouchableOpacity>
     </View>
   );

@@ -1,13 +1,13 @@
 import { StyleSheet, View } from 'react-native'
 import React from 'react'
 
-const beranda = () => {
+const Beranda = () => {
   return (
     <View>
     </View>
   )
 }
 
-export default beranda
+export default Beranda
 
 const styles = StyleSheet.create({})

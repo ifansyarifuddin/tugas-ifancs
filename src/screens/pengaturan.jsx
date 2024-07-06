@@ -1,13 +1,13 @@
 import { StyleSheet, View } from 'react-native'
 import React from 'react'
 
-const pengaturan = () => {
+const Pengaturan = () => {
   return (
     <View>
     </View>
   )
 }
 
-export default pengaturan
+export default Pengaturan
 
 const styles = StyleSheet.create({})

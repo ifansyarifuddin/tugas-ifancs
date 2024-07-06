@@ -8,8 +8,8 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import beranda from './screens/beranda';
 import pengaturan from './screens/pengaturan';
 import notifikasi from './screens/notifikasi';
-
-
+import Tafsir from './router/Tafsir';
+import TafsirDetail from './router/TafsirDetail';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
@@ -45,6 +45,8 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={MyTabs} options={{headerShown:false}}/>
+        <Stack.Screen name="Tafsir" component={Tafsir}/>
+        <Stack.Screen name="TafsirDetail" component={TafsirDetail}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
